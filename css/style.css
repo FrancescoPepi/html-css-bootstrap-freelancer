@@ -4,6 +4,10 @@
 # ******************************
 */
 
+img {
+  width: 100%;
+}
+
 /* ?  HEADER   */
 
 #header {
@@ -31,9 +35,15 @@
   display: inline-block;
   content: "";
   width: 50px;
-  border: 3px solid white;
+  border: 3px solid currentColor;
   border-radius: 5px;
   margin: 3px;
+}
+
+/* ?  PORTFOLIO   */
+
+#portfolio {
+  background-color: white;
 }
 
 /* 
@@ -44,9 +54,10 @@
 .debug * {
   border: 1px dashed red;
 }
-.debug img {
+.debug #jumbotron img {
   width: 200px;
   aspect-ratio: 1/1;
-  border: 1px dashed black;
+  background-color: blue;
+  border: 2px dashed black;
   border-radius: 50%;
 }
