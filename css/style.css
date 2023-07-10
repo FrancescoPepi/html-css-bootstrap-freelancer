@@ -4,9 +4,9 @@
 # ******************************
 */
 
-img {
-  width: 100%;
-}
+/* img {
+  width: 90%;
+} */
 
 /* ?  HEADER   */
 
@@ -29,7 +29,7 @@ img {
 .stars::after {
   display: inline-block;
   content: "";
-  width: 50px;
+  width: calc(1.375rem + 5vw);
   border: 3px solid currentColor;
   border-radius: 5px;
   margin: 3px;
@@ -56,6 +56,10 @@ img {
 #social {
   background-color: #3a546d;
   color: white;
+}
+
+.push-email {
+  width: calc(100vw - 300px);
 }
 
 /* ?  FOOTER   */
