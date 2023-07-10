@@ -18,11 +18,6 @@ img {
 
 /* *  MENU   */
 
-#header .menu {
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
 /* ?  JUMBOTRON   */
 
 #jumbotron {
@@ -46,6 +41,15 @@ img {
   background-color: white;
 }
 
+/* ?  ABOUT   */
+
+#about {
+  background-color: #1abc9c;
+  color: white;
+}
+#about button {
+  color: white;
+}
 /* 
 # ******************************
 # *         DEBUG            *
@@ -55,7 +59,7 @@ img {
   border: 1px dashed red;
 }
 .debug #jumbotron img {
-  width: 200px;
+  width: 50%;
   aspect-ratio: 1/1;
   background-color: blue;
   border: 2px dashed black;
