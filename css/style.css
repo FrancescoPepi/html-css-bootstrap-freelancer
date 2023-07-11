@@ -3,23 +3,28 @@
 # *         GENERIC            *
 # ******************************
 */
+body {
+  color: white;
+}
+section:nth-last-of-type(even) {
+  background-color: #1abc9c;
+  color: white;
+}
+
+section:nth-last-of-type(odd) {
+  background-color: white;
+  color: #2c3e50;
+}
 
 /* ?  HEADER   */
 
 #header {
   height: 100px;
-  background-color: #2c3e50;
+  background-color: #2c3e50d5;
   color: white;
 }
 
-/* *  MENU   */
-
-/* ?  JUMBOTRON   */
-
-#jumbotron {
-  background-color: #1abc9c;
-  color: white;
-}
+/* ?  STARS   */
 
 .stars::before,
 .stars::after {
@@ -31,27 +36,10 @@
   margin: 3px;
 }
 
-/* ?  PORTFOLIO   */
-
-#portfolio {
-  background-color: white;
-}
-
-/* ?  ABOUT   */
-
-#about {
-  background-color: #1abc9c;
-  color: white;
-}
-#about button {
-  color: white;
-}
-
 /* ?  SOCIAL   */
 
 #social {
   background-color: #3a546d;
-  color: white;
 }
 
 #social button {
@@ -69,18 +57,24 @@
   color: white;
 }
 
+.circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.circle:hover {
+  background-color: black;
+  filter: invert(0.8);
+}
+
 /* 
 # ******************************
 # *         DEBUG            *
 # ******************************
 */
-.debug * {
-  border: 1px dashed red;
-}
-.debug #jumbotron img {
-  width: 50%;
-  aspect-ratio: 1/1;
-  background-color: blue;
-  border: 2px dashed black;
-  border-radius: 50%;
-}

@@ -28,22 +28,23 @@
   </head>
   <body class="">
     <!-- HEADER -->
-    <header id="header">
+    <header id="header" class="sticky-top">
       <nav
         class="container d-flex h-100 align-items-center fs-2 fw-bolder font-monospace"
       >
-        <div class="logo me-auto text-nowrap">START BOOSTRAP</div>
+        <div class="logo me-auto text-nowrap">
+          <a class="navbar-brand" href="#">START BOOSTRAP</a>
+        </div>
         <div class="link d-none d-md-block">
-          <span><a class="navbar-brand" href="">PORTFOLIO</a></span>
-          <span><a class="navbar-brand" href="">ABOUT</a></span>
-          <span><a class="navbar-brand" href="">CONTACT</a></span>
+          <span><a class="navbar-brand" href="#portfolio">PORTFOLIO</a></span>
+          <span><a class="navbar-brand" href="#about">ABOUT</a></span>
+          <span><a class="navbar-brand" href="#contact-me">CONTACT</a></span>
         </div>
         <button class="menu btn btn-outline-secondary border d-md-none">
           <i class="fa-solid fa-bars" style="color: #ffffff"></i>
         </button>
       </nav>
     </header>
-
     <!-- JUMBOTRN-->
     <section id="jumbotron">
       <div class="container text-center py-4">
@@ -125,7 +126,7 @@
           </div>
 
           <div class="text-center">
-            <button class="btn btn-outline-success border">
+            <button class="btn btn-outline-success border text-light">
               <i
                 class="fa-sharp fa-solid fa-download"
                 style="color: #ffffff"
@@ -200,22 +201,52 @@
         </form>
       </div>
     </section>
-
     <!-- FOOTER -->
     <footer class="text-center">
       <!-- social -->
-      <section id="social">
+      <section id="social" class="py-4">
         <div class="container text-center">
-          <div class="row gap-2 justify-content-between">
-            <div class="col-12 col-md-3">LOCATION</div>
-            <div class="col-12 col-md-3">AROUND THE WEB</div>
-            <div class="col-12 col-md-3">ABOUT REELANCER</div>
+          <div class="row gap-2 justify-content-center">
+            <div class="col-10 col-md-3 my-3 my-md-0">
+              <div class="mb-2">LOCATION</div>
+              <div>2215 John Daniel Drive Clark, Mo 54243</div>
+            </div>
+            <div class="col-10 col-md-4 my-3 my-md-0 text-nowrap">
+              <div class="mb-2">AROUND THE WEB</div>
+              <span class="circle">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+              </span>
+              <span class="circle">
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  style="color: #ffffff"
+                ></i>
+              </span>
+              <span class="circle">
+                <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+              </span>
+              <span class="circle">
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+              </span>
+            </div>
+            <div class="col-10 col-md-3 my-3 my-md-0">
+              <div class="mb-2">ABOUT REELANCER</div>
+              <div>
+                Freelance is a free to use, open source Bootstrap theme created
+                by
+                <a href="#" class="text-success text-decoration-none"
+                  >Start Bootstrap</a
+                >.
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- copyright -->
       </section>
-      <section id="bottom-footer">Copyright</section>
+      <section id="bottom-footer" class="py-4 h6 mb-0">
+        Copyright &copy; Your Website 2019
+      </section>
     </footer>
   </body>
 </html>
